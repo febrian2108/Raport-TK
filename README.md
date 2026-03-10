@@ -180,7 +180,7 @@ Jumlah data yang ditampilkan secara default adalah **50 orang**, dan dapat ditam
 
 Halaman ini akan tampil ketika pengguna mengklik tombol **Detail** pada halaman **TK PG1–PG4**.
 
-Halaman ini menampilkan detail satu data tenaga kerja berdasarkan data pada **PG **yang sedang dibuka. Pada data ini, ada beberapa kolom yang dapat kosong karena memang terdapat data yang sejak awal tidak terisi, dan hal tersebut tidak menjadi masalah.
+Halaman ini menampilkan detail satu data tenaga kerja berdasarkan data pada **PG** yang sedang dibuka. Pada data ini, ada beberapa kolom yang dapat kosong karena memang terdapat data yang sejak awal tidak terisi, dan hal tersebut tidak menjadi masalah.
 
 Pada halaman ini terdapat 3 tombol, yaitu:
 
@@ -202,11 +202,14 @@ Data tenaga kerja yang ditampilkan meliputi:
 - HKO per kuartal
 - Berita acara per kuartal
 - Pelanggaran per kuartal
+- Result (result = hasil raport yang memperlihatkan hasil dari setiap HKO, Berta acara, Pelanggran (data bisa di lihat di bagian poin HKO, poin Berita Acara, dan poin Pelanggaran pada file excel). dan data akan tampil sesuai dengan filter kuater yang di isi)
 
 Di bagian atas halaman terdapat fitur:
 
 - **checkbox filter kuartal**, misalnya jika pengguna hanya mencentang **Q1**, maka yang ditampilkan hanya data **Q1** untuk HKO, berita acara, dan pelanggaran
 - **dropdown filter PG / Plantation Group**
+
+jika user mencentang semua checkbox kuarter maka akan muncul semua dari Q1 - Q4
 
 Sistem menggunakan indikator warna raport tenaga kerja berdasarkan jumlah HKO per karyawan dengan ketentuan sebagai berikut:
 
