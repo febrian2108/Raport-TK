@@ -2,14 +2,15 @@
 
 Website ini memiliki **dua jenis role akses**, yaitu:
 
-- **Viewer**, yang hanya dapat melihat data.
+- **Viewer**, yang hanya dapat melihat data, dan juga tidak bisa melakukan edit profile.
 - **Admin**, yang dapat mengakses dan mengelola seluruh fitur dalam sistem.
 
 Terdapat **9 jenis data/file Excel** yang akan dimasukkan ke dalam website, dan daftar file tersebut dapat dilihat pada bagian **Manajemen Data**.
 
 Sistem juga menyediakan **template Excel** yang wajib digunakan saat mengunggah file, agar format data sesuai dengan struktur database dan dapat diproses tanpa kendala.
 
-**Primary key** pada data menggunakan **NIK karyawan**, karena **ID karyawan berubah setiap 1 tahun sekali**.
+**Primary key** pada data menggunakan **NIK karyawan**, karena No. Pers (ID karyawan) berubah setiap 1 tahun sekali.
+Dalam sistem ini, No. Pers adalah ID karyawan yang digunakan perusahaan, namun karena nilainya tidak tetap, maka tidak digunakan sebagai **primary key**.
 
 Setiap file Excel yang diunggah diperkirakan dapat berisi **lebih dari 15.000 data karyawan**.
 
@@ -54,9 +55,9 @@ Halaman ini ditampilkan sebelum pengguna dapat mengakses dashboard. Jika penggun
 
 ## 2. Halaman Dashboard (Utama)
 
-Saat pengguna mengetikkan domain website, sistem akan mengarahkan ke halaman ini. Namun, jika pengguna belum login, maka pengguna akan diarahkan terlebih dahulu ke halaman login.
+Saat pengguna mengakses domain website, sistem akan memeriksa status autentikasi. Jika belum login, pengguna diarahkan ke halaman login. Jika sudah login, pengguna diarahkan ke halaman dashboard utama.
 
-Pada halaman ini terdapat **4 grafik batang**, yang masing-masing menampilkan data **HKO, berita acara, dan pelanggaran per kuartal**. Data tersebut berasal dari file Excel yang diunggah setiap **3 bulan sekali** melalui halaman **Kelola Data Rekap Raport TK**.
+Pada halaman dashboard utama terdapat 4 grafik batang, masing-masing mewakili PG1, PG2, PG3, dan PG4. Setiap grafik menampilkan perbandingan data HKO, berita acara, dan pelanggaran berdasarkan kuartal. Data tersebut berasal dari file Excel yang diunggah setiap **3 bulan sekali** melalui halaman **Kelola Data Rekap Raport TK**.
 
 Grafik disajikan **per kuartal** pada masing-masing **PG**, dengan pembagian warna sebagai berikut:
 
@@ -64,7 +65,7 @@ Grafik disajikan **per kuartal** pada masing-masing **PG**, dengan pembagian war
 - **Kuning** untuk berita acara
 - **Merah** untuk pelanggaran
 
-Pengguna juga dapat melakukan **filter berdasarkan bulan dan tahun** untuk melihat grafik batang sesuai kebutuhan.
+Pengguna juga dapat melakukan **filter berdasarkan Quartal dan tahun** untuk melihat grafik batang sesuai kebutuhan.
 
 Selain grafik, pada halaman ini juga terdapat ringkasan jumlah atau persentase **HKO, berita acara, dan pelanggaran** berdasarkan filter yang dipilih. Dengan demikian, total terdapat **4 grafik** pada halaman dashboard utama.
 
@@ -136,17 +137,16 @@ Halaman ini menyediakan filter berdasarkan:
 ## 7. Halaman PG1–PG4
 
 Halaman ini menampilkan data dari file yang diunggah melalui halaman **Kelola Data HKO, Berita Acara, dan Pelanggaran** dalam bentuk **grafik garis**.
-
-Pada halaman ini terdapat **3 grafik**. Di atas grafik terdapat **3 section box** yang menampilkan persentase dari:
+Pada halaman ini terdapat **3 grafik**. Di atas grafik terdapat **3 summary cards** yang menampilkan persentase dari:
 
 - HKO
 - berita acara
 - pelanggaran
+yang di upload pada halaman kelola data HKO, Berita Acara, dan Pelanggaran
 
 ## 8. Halaman TK PG1–PG4
 
 Halaman ini menampilkan data dari file yang diunggah melalui halaman **Kelola Data TK PG1–PG4** dalam bentuk **tabel daftar tenaga kerja**.
-
 Contohnya, jika file Excel yang diunggah adalah **file TK PG1**, maka data tersebut akan muncul di halaman ini.
 
 Data yang ditampilkan hanya meliputi beberapa kolom berikut:
@@ -179,7 +179,7 @@ Jumlah data yang ditampilkan secara default adalah **50 orang**, dan dapat ditam
 
 Halaman ini akan tampil ketika pengguna mengklik tombol **Detail** pada halaman **TK PG1–PG4**.
 
-Halaman ini menampilkan detail data tenaga kerja sesuai dengan **PG** yang sedang dipilih. Pada data ini, ada beberapa kolom yang dapat kosong karena memang terdapat data yang sejak awal tidak terisi, dan hal tersebut tidak menjadi masalah.
+Halaman ini menampilkan detail satu data tenaga kerja berdasarkan data pada **PG **yang sedang dibuka. Pada data ini, ada beberapa kolom yang dapat kosong karena memang terdapat data yang sejak awal tidak terisi, dan hal tersebut tidak menjadi masalah.
 
 Pada halaman ini terdapat 3 tombol, yaitu:
 
@@ -207,11 +207,15 @@ Di bagian atas halaman terdapat fitur:
 - **checkbox filter kuartal**, misalnya jika pengguna hanya mencentang **Q1**, maka yang ditampilkan hanya data **Q1** untuk HKO, berita acara, dan pelanggaran
 - **dropdown filter PG / Plantation Group**
 
-Selain itu, terdapat filter raport dengan 3 warna indikator, yaitu:
+Sistem menggunakan indikator warna raport tenaga kerja berdasarkan jumlah HKO per karyawan dengan ketentuan sebagai berikut:
 
-- hijau
-- kuning
-- merah
+- Merah jika jumlah HKO lebih dari 20
+
+- Kuning jika jumlah HKO kurang dari 20
+
+- Hijau jika jumlah HKO sama dengan 20
+
+Indikator ini ditampilkan per karyawan dan digunakan sebagai bagian dari logika penilaian perusahaan
 
 ---
 
