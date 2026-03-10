@@ -86,31 +86,32 @@ Jika tidak ada perubahan data, maka tombol **Simpan** berada dalam keadaan **non
 
 ## 4. Halaman Overtime / Lembur
 
-Halaman ini menampilkan data dalam bentuk grafik yang berasal dari file Excel yang diunggah melalui halaman **Kelola Data Overtime**.
+Halaman ini menampilkan data **overtime/lembur** dalam bentuk **grafik** yang berasal dari file Excel yang diunggah melalui halaman **Kelola Data Overtime**.
 
-Selain grafik, pengguna juga dapat melihat data dalam bentuk **tabel**. Pada setiap baris data terdapat tombol **Edit** dan **Hapus** di bagian kanan.
+Grafik digunakan untuk menampilkan data overtime pada setiap **PG**.
 
-Halaman ini juga menyediakan filter berdasarkan:
+Pengguna dapat melakukan penyaringan data berdasarkan:
 
-- bulanan
-- kuartalan
-- tahunan
+- **Kuartal**, menggunakan **checkbox** sehingga pengguna dapat memilih satu atau beberapa kuartal yang ingin ditampilkan
+- **Tahun**
 
-Data yang ditampilkan akan menyesuaikan dengan filter yang digunakan.
+Data dan grafik yang ditampilkan akan menyesuaikan dengan filter yang dipilih.
 
 ## 5. Halaman TK Overtime
 
-Halaman ini menampilkan data dari file Excel yang diunggah melalui halaman **Kelola Data Overtime**.
+Halaman ini menampilkan data **karyawan yang melakukan overtime** dari file Excel yang diunggah melalui halaman **Kelola Data Overtime**.
 
-Data ditampilkan dalam bentuk **tabel**, dan pada setiap baris terdapat tombol **Edit** dan **Hapus** di bagian kanan.
+Data disajikan dalam bentuk **tabel per karyawan**. Pada setiap baris data tersedia tombol:
 
-Selain itu, tersedia juga filter berdasarkan:
+- **Edit**
+- **Hapus**
 
-- bulanan
-- kuartalan
-- tahunan
+Halaman ini juga menyediakan filter berdasarkan:
 
-Data yang tampil akan mengikuti filter yang dipilih pengguna.
+- **Kuartal**
+- **Tahun**
+
+Data yang ditampilkan akan menyesuaikan dengan filter yang dipilih pengguna.
 
 ## 6. Halaman Raport Bulanan TK
 
