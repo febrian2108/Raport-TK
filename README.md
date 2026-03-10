@@ -173,6 +173,8 @@ Jumlah data yang ditampilkan secara default adalah **50 orang**, dan dapat ditam
 - 150
 - 200
 
+---
+
 ## 9. Halaman Detail Raport TK
 
 Halaman ini akan tampil ketika pengguna mengklik tombol **Detail** pada halaman **TK PG1–PG4**.
