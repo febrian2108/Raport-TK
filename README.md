@@ -5,7 +5,7 @@ Website ini memiliki **dua jenis role akses**, yaitu:
 - **Viewer**, yang hanya dapat melihat data.
 - **Admin**, yang dapat mengakses dan mengelola seluruh fitur dalam sistem.
 
-Terdapat **9 file Excel** yang akan dimasukkan ke dalam website, dan daftar file tersebut dapat dilihat pada bagian **Manajemen Data**.
+Terdapat **9 jenis data/file Excel** yang akan dimasukkan ke dalam website, dan daftar file tersebut dapat dilihat pada bagian **Manajemen Data**.
 
 Sistem juga menyediakan **template Excel** yang wajib digunakan saat mengunggah file, agar format data sesuai dengan struktur database dan dapat diproses tanpa kendala.
 
