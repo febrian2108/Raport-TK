@@ -33,7 +33,7 @@ Berikut beberapa istilah yang digunakan dalam sistem:
   Terdiri dari: **PG1, PG2, PG3, dan PG4**
 - **HKO** = *Hari Kerja*
 - **Berita Acara** = izin atau kendala absensi
-- **Pelanggaran** = tindakan yang melanggar aturan
+- **Pelanggaran** = tindakan yang melanggar aturan contohnya tidak masuk kerja tanpa keterangan
 
 Dalam 1 tahun terdapat **4 kuartal**, dengan rincian:
 
